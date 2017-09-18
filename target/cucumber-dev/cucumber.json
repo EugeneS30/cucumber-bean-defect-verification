@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Buy last coffee",
+        "description": "",
+        "id": "serve-coffee;buy-last-coffee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67449776,
+              "error_message": "cucumber.runtime.CucumberException: No qualifying bean of type [functional.CoffeeSteps] is defined: expected single matching bean but found 2: coffeeSteps,functional.CoffeeSteps\r\n\tat cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:182)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\nCaused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [functional.CoffeeSteps] is defined: expected single matching bean but found 2: coffeeSteps,functional.CoffeeSteps\r\n\tat org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:366)\r\n\tat org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:332)\r\n\tat cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:180)\r\n\t... 31 more\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "there are 1 coffees left in the machine",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 10
+                }
+              ],
+              "location": "CoffeeSteps.there_are_coffees_left_in_the_machine(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I have deposited 1$",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 17
+                }
+              ],
+              "location": "CoffeeSteps.i_have_deposited_$(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I press the coffee button",
+            "match": {
+              "location": "CoffeeSteps.i_press_the_coffee_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I should be served a coffee",
+            "match": {
+              "location": "CoffeeSteps.i_should_be_served_a_coffee()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Serve coffee",
+    "description": "Coffee should not be served until paid for\nCoffee should not be served until the button has been pressed\nIf there is no coffee left then money should be refunded",
+    "id": "serve-coffee",
+    "keyword": "Feature",
+    "uri": "features/test.feature"
+  }
+]
